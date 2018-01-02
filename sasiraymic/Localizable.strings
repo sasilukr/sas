@@ -1,0 +1,22 @@
+//
+//  Localizable.strings
+//  sasiraymic
+//
+//  Created by Sasi Ruangrongsorakai on 12/29/17.
+//  Copyright © 2017 com.sasiluk. All rights reserved.
+//
+
+
+"button.login"="Log In";
+"button.logout"="Log Out";
+"button.signup"="Sign Up";
+"button.cancel"="Cancel";
+
+"login.email"="Email";
+"login.password"="Password";
+"signup.username"="Username";
+
+"open.camera"="Open Camera";
+"open.photoLibrary"="Open Photo Library";
+
+

@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AWSAPIGateway (2.6.0):
+    - AWSCore (= 2.6.0)
+  - AWSCognitoIdentityProvider (2.6.0):
+    - AWSCore (= 2.6.0)
+  - AWSCore (2.6.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AWSAPIGateway (~> 2.6.0)
+  - AWSCognitoIdentityProvider (~> 2.6.0)
+  - AWSCore (= 2.6.0)
+  - R.swift
+  - SDWebImage
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AWSAPIGateway: ea797be57e9dac38c080c9ca96db677783316dd8
+  AWSCognitoIdentityProvider: 25525453da79039ec191c3a33b358e828681cca9
+  AWSCore: a232d9a402ac11d76f3d87222a3f777e81b85abf
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: b019c5d64f5f52d4aa968f6a8f8efa17890bb934
+
+COCOAPODS: 1.2.1
