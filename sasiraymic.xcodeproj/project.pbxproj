@@ -24,6 +24,8 @@
 		5E5C8C601FF834330010D69C /* AWSProdpotsappapiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C5F1FF834330010D69C /* AWSProdpotsappapiClient.swift */; };
 		5EF9BD471FF83BE90036CA01 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD461FF83BE90036CA01 /* ApiClient.swift */; };
 		5EF9BD531FFB11F40036CA01 /* AwsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */; };
+		5EF9BD551FFB1B030036CA01 /* PotsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */; };
+		5EF9BD571FFB1B6A0036CA01 /* PotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */; };
 		C7EB022CE0B858767489E04F /* Pods_sasiraymic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1736A3D0E38332A30CE2AC1F /* Pods_sasiraymic.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		5E5C8C621FF836020010D69C /* Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
 		5EF9BD461FF83BE90036CA01 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsConfig.swift; sourceTree = "<group>"; };
+		5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsCollectionViewController.swift; sourceTree = "<group>"; };
+		5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2EA738C86560E8D1960AF37 /* Pods-sasiraymic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sasiraymic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sasiraymic/Pods-sasiraymic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +125,8 @@
 				5E5C8C3D1FF381DF0010D69C /* ProfileViewController.swift */,
 				5E5C8C581FF76D3E0010D69C /* LoginViewController.swift */,
 				5E5C8C5D1FF82A1B0010D69C /* SignupViewController.swift */,
+				5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */,
+				5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			files = (
 				5E5C8C2E1FF380380010D69C /* AddViewController.swift in Sources */,
 				5E5C8C571FF76BA20010D69C /* R.generated.swift in Sources */,
+				5EF9BD551FFB1B030036CA01 /* PotsCollectionViewController.swift in Sources */,
 				5E5C8C5E1FF82A1B0010D69C /* SignupViewController.swift in Sources */,
 				5E5C8C5C1FF778010010D69C /* Utils.swift in Sources */,
 				5E5C8C2A1FF380380010D69C /* AppDelegate.swift in Sources */,
@@ -294,6 +301,7 @@
 				5E5C8C401FF382C60010D69C /* TabBarController.swift in Sources */,
 				5E5C8C2C1FF380380010D69C /* HomeViewController.swift in Sources */,
 				5E5C8C521FF769070010D69C /* Constants.swift in Sources */,
+				5EF9BD571FFB1B6A0036CA01 /* PotCollectionViewCell.swift in Sources */,
 				5E5C8C601FF834330010D69C /* AWSProdpotsappapiClient.swift in Sources */,
 				5EF9BD471FF83BE90036CA01 /* ApiClient.swift in Sources */,
 			);

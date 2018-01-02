@@ -13,7 +13,8 @@ class ApiClient {
     static let shared = ApiClient()
     private init() {}
     
-    func getPots() {
+    func getPots(success: @escaping (NSArray) -> Void,
+                 failure: @escaping (Any?) -> Void) {
         
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1,
                                                                 identityPoolId: AwsCognitoKeys.IdentityPoolId,
@@ -26,7 +27,14 @@ class ApiClient {
         let apiClient = AWSProdpotsappapiClient.default()
         
         apiClient.potsGet().continueWith {(t: AWSTask<AnyObject>) in
-            
+            if let error = t.error {
+                failure(nil)
+            } else if let result = t.result as? NSArray {
+                success(result)
+            } else {
+                failure(nil)
+            }
+    
             self.showResult(task: t)
             return nil
         }

@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
+    
+    var glazeTableView: UITableView!
 
+    var glazeList = ["Butter White", "Lily Clear", "Honey White", "Stone Black"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,20 +21,27 @@ class HomeViewController: UIViewController {
                                                selector: #selector(loginAction),
                                                name: .onLogin,
                                                object: nil)
+        glazeTableView = UITableView()
+        glazeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "GlazeTableViewCell")
+        glazeTableView.dataSource = self
+        glazeTableView.delegate = self
+        glazeTableView.backgroundColor = .red
+        
+        self.view.addSubview(glazeTableView)
+        
+        glazeTableView.snp.makeConstraints { m in
+            m.edges.equalTo(self.view.snp.edges)
+        }
         
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        self.fetchPots()
-//    }
 
     func fetchPots() {
-        ApiClient.shared.getPots()
+//        ApiClient.shared.getPots()
     }
     
     @objc func loginAction() {
-        self.fetchPots()
+        print("\(#function)")
+//        self.fetchPots()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +49,22 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
 
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.glazeList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "GlazeTableViewCell")
+        cell.textLabel?.text = self.glazeList[indexPath.item]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tabBarController?.present(PotsCollectionViewController(), animated: true)
+    }
 }
 
