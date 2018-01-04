@@ -6,7 +6,7 @@
 //  Copyright © 2017 com.sasiluk. All rights reserved.
 //
 
-
+"button.ok"="OK";
 "button.login"="Log In";
 "button.logout"="Log Out";
 "button.signup"="Sign Up";

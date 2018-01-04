@@ -22,6 +22,17 @@ extension UIColor {
     }
 }
 
+extension UITextField {
+    func customizeInputTextField() {
+        self.backgroundColor = Style.Color.Primary.ui
+        self.layer.cornerRadius = 5
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: 20))
+        self.leftView = paddingView
+        self.leftViewMode = UITextFieldViewMode.always
+        self.tintColor = UIColor.white
+    }
+}
+
 extension UIApplication {
     class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {

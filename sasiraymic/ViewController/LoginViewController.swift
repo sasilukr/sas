@@ -34,11 +34,12 @@ class LoginViewController: UIViewController {
         passwordTextField.layer.cornerRadius = Style.Spacing.X2
         
         loginButton.setTitleColor(.black, for: .normal)
+        loginButton.setTitleColor(.gray, for: .disabled)
         loginButton.setTitle(R.string.localizable.buttonLogin(), for: .normal)
         loginButton.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
 
-        signupButton.backgroundColor = Style.Color.fifth.ui
         signupButton.setTitleColor(.black, for: .normal)
+        signupButton.setTitleColor(.gray, for: .disabled)
         signupButton.setTitle(R.string.localizable.buttonSignup(), for: .normal)
         signupButton.addTarget(self, action: #selector(signupAction), for: .touchUpInside)
 
@@ -73,8 +74,25 @@ class LoginViewController: UIViewController {
             m.top.equalTo(self.loginButton.snp.top)
             m.left.equalTo(self.loginButton.snp.right)
         }
-        
-        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailTextField.addTarget(self, action: #selector(inputDidChange), for: .editingChanged)
+        self.passwordTextField.addTarget(self, action: #selector(inputDidChange), for: .editingChanged)
+    }
+    
+    
+    @objc func inputDidChange() {
+        if (self.emailTextField.text?.isEmpty == false
+            && self.passwordTextField.text?.isEmpty == false) {
+            self.loginButton.isEnabled = true
+            self.loginButton.isUserInteractionEnabled = true
+        } else {
+            self.loginButton.isEnabled = false
+            self.loginButton.isUserInteractionEnabled = false
+        }
     }
     
     @objc func signupAction() {
