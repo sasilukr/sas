@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     var passwordTextField = UITextField()
     var loginButton = UIButton()
     var signupButton = UIButton()
+    var forgotPasswordButton = UIButton()
     
     var passwordAuthenticationCompletion: AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails>?
 
@@ -43,11 +44,18 @@ class LoginViewController: UIViewController {
         signupButton.setTitle(R.string.localizable.buttonSignup(), for: .normal)
         signupButton.addTarget(self, action: #selector(signupAction), for: .touchUpInside)
 
+    
+        forgotPasswordButton.setTitleColor(.black, for: .normal)
+        forgotPasswordButton.setTitle(R.string.localizable.buttonForgotPassword(), for: .normal)
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordAction), for: .touchUpInside)
+        
+
         
         self.view.addSubview(emailTextField)
         self.view.addSubview(passwordTextField)
         self.view.addSubview(loginButton)
         self.view.addSubview(signupButton)
+        self.view.addSubview(forgotPasswordButton)
 
         self.view.backgroundColor = .white
         emailTextField.snp.makeConstraints { m in
@@ -74,6 +82,12 @@ class LoginViewController: UIViewController {
             m.top.equalTo(self.loginButton.snp.top)
             m.left.equalTo(self.loginButton.snp.right)
         }
+        
+        forgotPasswordButton.snp.makeConstraints { m in
+            m.width.equalTo(self.view.frame.size.width)
+            m.height.equalTo(Style.Spacing.X4)
+            m.top.equalTo(self.loginButton.snp.bottom).offset(Style.Spacing.X6)
+        }
     }
     
     
@@ -93,6 +107,22 @@ class LoginViewController: UIViewController {
             self.loginButton.isEnabled = false
             self.loginButton.isUserInteractionEnabled = false
         }
+    }
+    
+    @objc func forgotPasswordAction() {
+        guard let emailAddress = self.emailTextField.text, emailAddress.isEmpty == false else {
+            let alertController = UIAlertController(title: "Enter Email",
+                                                    message: "Please enter your email address and then select Forgot Password if you want to reset your password.",
+                                                    preferredStyle: .alert)
+            let retryAction = UIAlertAction(title: R.string.localizable.buttonOk(), style: .default, handler: nil)
+            alertController.addAction(retryAction)
+            self.present(alertController, animated: true, completion:  nil)
+            return
+        }
+        
+        let vc = ForgotPasswordViewController()
+        vc.emailAddress = emailAddress
+        present(vc, animated: true, completion: nil)
     }
     
     @objc func signupAction() {

@@ -10,6 +10,7 @@
 "button.login"="Log In";
 "button.logout"="Log Out";
 "button.signup"="Sign Up";
+"button.forgotPassword"="Forgot Password";
 "button.cancel"="Cancel";
 
 "login.email"="Email";

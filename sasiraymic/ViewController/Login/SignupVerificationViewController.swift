@@ -34,6 +34,7 @@ class SignupVerificationViewController: UIViewController {
         verificationLabel.text = "Enter the verification code that was sent to the email address you provided:"
         verificationLabel.lineBreakMode = .byWordWrapping
         verificationLabel.numberOfLines = 0
+        
         verificationField.customizeInputTextField()
         
         
