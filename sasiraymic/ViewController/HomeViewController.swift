@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         glazeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "GlazeTableViewCell")
         glazeTableView.dataSource = self
         glazeTableView.delegate = self
-        glazeTableView.backgroundColor = .red
+        glazeTableView.backgroundColor = .black
         
         self.view.addSubview(glazeTableView)
         
@@ -64,7 +64,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tabBarController?.present(PotsCollectionViewController(), animated: true)
+        self.navigationController?.pushViewController(PotsCollectionViewController(), animated: true)
     }
 }
 

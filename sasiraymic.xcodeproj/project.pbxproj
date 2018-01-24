@@ -22,6 +22,8 @@
 		5E5C8C5C1FF778010010D69C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C5B1FF778010010D69C /* Utils.swift */; };
 		5E5C8C5E1FF82A1B0010D69C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C5D1FF82A1B0010D69C /* SignupViewController.swift */; };
 		5E5C8C601FF834330010D69C /* AWSProdpotsappapiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C5F1FF834330010D69C /* AWSProdpotsappapiClient.swift */; };
+		5EA906F9200539FD000CADAC /* DetailedPotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA906F8200539FD000CADAC /* DetailedPotViewController.swift */; };
+		5EA906FC20053A81000CADAC /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA906FB20053A81000CADAC /* Pot.swift */; };
 		5EF9BD471FF83BE90036CA01 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD461FF83BE90036CA01 /* ApiClient.swift */; };
 		5EF9BD531FFB11F40036CA01 /* AwsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */; };
 		5EF9BD551FFB1B030036CA01 /* PotsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */; };
@@ -53,6 +55,8 @@
 		5E5C8C5F1FF834330010D69C /* AWSProdpotsappapiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSProdpotsappapiClient.swift; sourceTree = "<group>"; };
 		5E5C8C611FF836020010D69C /* AWSApiGatewayBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSApiGatewayBridge.h; sourceTree = "<group>"; };
 		5E5C8C621FF836020010D69C /* Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		5EA906F8200539FD000CADAC /* DetailedPotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPotViewController.swift; sourceTree = "<group>"; };
+		5EA906FB20053A81000CADAC /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
 		5EF9BD461FF83BE90036CA01 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsConfig.swift; sourceTree = "<group>"; };
 		5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsCollectionViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				5E5C8C291FF380380010D69C /* AppDelegate.swift */,
 				5E5C8C2F1FF380380010D69C /* Main.storyboard */,
 				5E5C8C631FF83A210010D69C /* Aws */,
+				5EA906FA20053A6A000CADAC /* Model */,
 				5E5C8C5A1FF76D450010D69C /* ViewController */,
 				5E5C8C321FF380380010D69C /* Assets.xcassets */,
 				5E5C8C341FF380380010D69C /* LaunchScreen.storyboard */,
@@ -130,6 +135,7 @@
 				5E5C8C3D1FF381DF0010D69C /* ProfileViewController.swift */,
 				5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */,
 				5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */,
+				5EA906F8200539FD000CADAC /* DetailedPotViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -143,6 +149,14 @@
 				5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */,
 			);
 			path = Aws;
+			sourceTree = "<group>";
+		};
+		5EA906FA20053A6A000CADAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EA906FB20053A81000CADAC /* Pot.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5EF9BD5D1FFE02A80036CA01 /* Login */ = {
@@ -305,6 +319,7 @@
 			files = (
 				5E5C8C2E1FF380380010D69C /* AddViewController.swift in Sources */,
 				5E5C8C571FF76BA20010D69C /* R.generated.swift in Sources */,
+				5EA906FC20053A81000CADAC /* Pot.swift in Sources */,
 				5EF9BD551FFB1B030036CA01 /* PotsCollectionViewController.swift in Sources */,
 				5E5C8C5E1FF82A1B0010D69C /* SignupViewController.swift in Sources */,
 				5E5C8C5C1FF778010010D69C /* Utils.swift in Sources */,
@@ -313,6 +328,7 @@
 				5EF9BD531FFB11F40036CA01 /* AwsConfig.swift in Sources */,
 				5E5C8C591FF76D3E0010D69C /* LoginViewController.swift in Sources */,
 				5EF9BD5C1FFDE5EE0036CA01 /* SignupVerificationViewController.swift in Sources */,
+				5EA906F9200539FD000CADAC /* DetailedPotViewController.swift in Sources */,
 				5E5C8C401FF382C60010D69C /* TabBarController.swift in Sources */,
 				5EF9BD5F1FFFEE260036CA01 /* ForgotPasswordViewController.swift in Sources */,
 				5E5C8C2C1FF380380010D69C /* HomeViewController.swift in Sources */,

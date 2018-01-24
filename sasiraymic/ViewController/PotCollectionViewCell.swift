@@ -31,7 +31,6 @@ class PotCollectionViewCell: UICollectionViewCell {
         
         self.contentView.addSubview(self.imageView)
         
-        
         self.imageView.snp.makeConstraints { m in
             m.width.equalTo(w)
             m.height.equalTo(h)
