@@ -5,6 +5,7 @@ PODS:
   - AWSCognitoIdentityProvider (2.6.0):
     - AWSCore (= 2.6.0)
   - AWSCore (2.6.0)
+  - CollieGallery (0.6.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - AWSAPIGateway (~> 2.6.0)
   - AWSCognitoIdentityProvider (~> 2.6.0)
   - AWSCore (= 2.6.0)
+  - CollieGallery
   - R.swift
   - SDWebImage
   - SnapKit
@@ -27,11 +29,12 @@ SPEC CHECKSUMS:
   AWSAPIGateway: ea797be57e9dac38c080c9ca96db677783316dd8
   AWSCognitoIdentityProvider: 25525453da79039ec191c3a33b358e828681cca9
   AWSCore: a232d9a402ac11d76f3d87222a3f777e81b85abf
+  CollieGallery: b8fcf63af6b31add2f435f5aee4742ae3b84cb3b
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: b019c5d64f5f52d4aa968f6a8f8efa17890bb934
+PODFILE CHECKSUM: 572792c8e7633f3c4215537f7de66829399e2dec
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

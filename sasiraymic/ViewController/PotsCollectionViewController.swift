@@ -7,15 +7,24 @@
 //
 
 import Foundation
+import CollieGallery
 
 class PotsCollectionViewController: UIViewController  {
     
     var collectionView: UICollectionView?
 
     var pots = [[String: Any]]()
+    var pictures = [CollieGalleryPicture]()
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.navigationBar.topItem?.title = " "
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -31,9 +40,14 @@ class PotsCollectionViewController: UIViewController  {
             if let results = results as? [[String: Any]] {
                 // TODO find better way to validate data
                 self.pots.removeAll()
+                self.pictures.removeAll()
                 for result in results {
                     if let pot = result["attachment"] as? String {
                         self.pots.append(result)
+                        
+                        let pic = CollieGalleryPicture(url: pot)
+                        pictures.append(pic)
+                        
                     }
                 }
                 DispatchQueue.main.async {
@@ -77,6 +91,17 @@ extension PotsCollectionViewController: UICollectionViewDelegate, UICollectionVi
         cell.setup(url: imageUrlString)
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard indexPath.item >= 0, indexPath.item < pictures.count else {
+            return
+        }
+        
+        let gallery = CollieGallery(pictures: pictures)
+        gallery.presentInViewController(self)
+        gallery.scrollToIndex(indexPath.item)
+
     }
     
 }

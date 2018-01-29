@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E13447E201EC17700B9D638 /* AwsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13447D201EC17700B9D638 /* AwsConfig.swift */; };
 		5E5C8C2A1FF380380010D69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C291FF380380010D69C /* AppDelegate.swift */; };
 		5E5C8C2C1FF380380010D69C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C2B1FF380380010D69C /* HomeViewController.swift */; };
 		5E5C8C2E1FF380380010D69C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C8C2D1FF380380010D69C /* AddViewController.swift */; };
@@ -25,7 +26,6 @@
 		5EA906F9200539FD000CADAC /* DetailedPotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA906F8200539FD000CADAC /* DetailedPotViewController.swift */; };
 		5EA906FC20053A81000CADAC /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA906FB20053A81000CADAC /* Pot.swift */; };
 		5EF9BD471FF83BE90036CA01 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD461FF83BE90036CA01 /* ApiClient.swift */; };
-		5EF9BD531FFB11F40036CA01 /* AwsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */; };
 		5EF9BD551FFB1B030036CA01 /* PotsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */; };
 		5EF9BD571FFB1B6A0036CA01 /* PotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */; };
 		5EF9BD5C1FFDE5EE0036CA01 /* SignupVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9BD5B1FFDE5EE0036CA01 /* SignupVerificationViewController.swift */; };
@@ -36,6 +36,7 @@
 /* Begin PBXFileReference section */
 		06555FE137EC14317F7B9CDA /* Pods-sasiraymic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sasiraymic.release.xcconfig"; path = "Pods/Target Support Files/Pods-sasiraymic/Pods-sasiraymic.release.xcconfig"; sourceTree = "<group>"; };
 		1736A3D0E38332A30CE2AC1F /* Pods_sasiraymic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sasiraymic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E13447D201EC17700B9D638 /* AwsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsConfig.swift; sourceTree = "<group>"; };
 		5E5C8C261FF380380010D69C /* sasiraymic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sasiraymic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5C8C291FF380380010D69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5C8C2B1FF380380010D69C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		5EA906F8200539FD000CADAC /* DetailedPotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPotViewController.swift; sourceTree = "<group>"; };
 		5EA906FB20053A81000CADAC /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
 		5EF9BD461FF83BE90036CA01 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsConfig.swift; sourceTree = "<group>"; };
 		5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsCollectionViewController.swift; sourceTree = "<group>"; };
 		5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotCollectionViewCell.swift; sourceTree = "<group>"; };
 		5EF9BD5B1FFDE5EE0036CA01 /* SignupVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVerificationViewController.swift; sourceTree = "<group>"; };
@@ -114,13 +114,13 @@
 				5E5C8C631FF83A210010D69C /* Aws */,
 				5EA906FA20053A6A000CADAC /* Model */,
 				5E5C8C5A1FF76D450010D69C /* ViewController */,
+				5EF9BD461FF83BE90036CA01 /* ApiClient.swift */,
+				5E5C8C511FF769070010D69C /* Constants.swift */,
+				5E5C8C5B1FF778010010D69C /* Utils.swift */,
 				5E5C8C321FF380380010D69C /* Assets.xcassets */,
 				5E5C8C341FF380380010D69C /* LaunchScreen.storyboard */,
 				5E5C8C371FF380380010D69C /* Info.plist */,
-				5E5C8C511FF769070010D69C /* Constants.swift */,
 				5E5C8C531FF76A6D0010D69C /* Localizable.strings */,
-				5E5C8C5B1FF778010010D69C /* Utils.swift */,
-				5EF9BD461FF83BE90036CA01 /* ApiClient.swift */,
 			);
 			path = sasiraymic;
 			sourceTree = "<group>";
@@ -131,11 +131,11 @@
 				5EF9BD5D1FFE02A80036CA01 /* Login */,
 				5E5C8C3F1FF382C60010D69C /* TabBarController.swift */,
 				5E5C8C2B1FF380380010D69C /* HomeViewController.swift */,
-				5E5C8C2D1FF380380010D69C /* AddViewController.swift */,
-				5E5C8C3D1FF381DF0010D69C /* ProfileViewController.swift */,
 				5EF9BD541FFB1B030036CA01 /* PotsCollectionViewController.swift */,
 				5EF9BD561FFB1B6A0036CA01 /* PotCollectionViewCell.swift */,
 				5EA906F8200539FD000CADAC /* DetailedPotViewController.swift */,
+				5E5C8C2D1FF380380010D69C /* AddViewController.swift */,
+				5E5C8C3D1FF381DF0010D69C /* ProfileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 				5E5C8C611FF836020010D69C /* AWSApiGatewayBridge.h */,
 				5E5C8C621FF836020010D69C /* Bridging_Header.h */,
 				5E5C8C5F1FF834330010D69C /* AWSProdpotsappapiClient.swift */,
-				5EF9BD521FFB11F40036CA01 /* AwsConfig.swift */,
+				5E13447D201EC17700B9D638 /* AwsConfig.swift */,
 			);
 			path = Aws;
 			sourceTree = "<group>";
@@ -257,13 +257,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sasiraymic-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5E5C8C551FF76B3D0010D69C /* R.swift */ = {
@@ -301,9 +304,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sasiraymic/Pods-sasiraymic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAPIGateway/AWSAPIGateway.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CollieGallery/CollieGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAPIGateway.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollieGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -325,11 +345,11 @@
 				5E5C8C5C1FF778010010D69C /* Utils.swift in Sources */,
 				5E5C8C2A1FF380380010D69C /* AppDelegate.swift in Sources */,
 				5E5C8C3E1FF381DF0010D69C /* ProfileViewController.swift in Sources */,
-				5EF9BD531FFB11F40036CA01 /* AwsConfig.swift in Sources */,
 				5E5C8C591FF76D3E0010D69C /* LoginViewController.swift in Sources */,
 				5EF9BD5C1FFDE5EE0036CA01 /* SignupVerificationViewController.swift in Sources */,
 				5EA906F9200539FD000CADAC /* DetailedPotViewController.swift in Sources */,
 				5E5C8C401FF382C60010D69C /* TabBarController.swift in Sources */,
+				5E13447E201EC17700B9D638 /* AwsConfig.swift in Sources */,
 				5EF9BD5F1FFFEE260036CA01 /* ForgotPasswordViewController.swift in Sources */,
 				5E5C8C2C1FF380380010D69C /* HomeViewController.swift in Sources */,
 				5E5C8C521FF769070010D69C /* Constants.swift in Sources */,
@@ -478,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K565LLSVNW;
+				DEVELOPMENT_TEAM = VAGXV8E2H5;
 				INFOPLIST_FILE = sasiraymic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -495,7 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K565LLSVNW;
+				DEVELOPMENT_TEAM = VAGXV8E2H5;
 				INFOPLIST_FILE = sasiraymic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

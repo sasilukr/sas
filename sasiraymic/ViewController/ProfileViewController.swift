@@ -11,21 +11,42 @@ import AVFoundation
 
 class ProfileViewController: UIViewController {
     
+    var usernameLabel = UILabel()
+    
     var logoutButton = UIButton()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.view.addSubview(usernameLabel)
         self.view.addSubview(logoutButton)
+        
+        if let user = AppDelegate.defaultUserPool().currentUser() {
+            self.title = user.username
+            usernameLabel.text = user.username
+        }
+    
+        usernameLabel.lineBreakMode = .byWordWrapping
+        usernameLabel.numberOfLines = 0
+        usernameLabel.textAlignment = .center
+        
+        
         logoutButton.tintColor = .black
         logoutButton.setTitleColor(.black, for: .normal)
         logoutButton.setTitle(R.string.localizable.buttonLogout(), for: .normal)
         logoutButton.addTarget(self, action: #selector(logoutAction), for: .touchUpInside)
         
+        
+        usernameLabel.snp.makeConstraints { m in
+            m.width.equalTo(self.view.frame.size.width)
+            m.top.equalTo(self.view.snp.top).offset(Style.Spacing.X8 + Style.Spacing.X2)
+        }
+        
         logoutButton.snp.makeConstraints { m in
             m.width.equalTo(self.view.frame.size.width)
-            m.center.equalTo(self.view.snp.center)
+            m.top.equalTo(self.usernameLabel.snp.bottom).offset(Style.Spacing.X2)
         }
         
         

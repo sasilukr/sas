@@ -11,6 +11,7 @@ target 'sasiraymic' do
 	pod 'SnapKit'
     pod 'R.swift'
     pod 'SDWebImage'
+    pod 'CollieGallery'
     
     # AWS
     pod 'AWSAPIGateway', '~> 2.6.0'

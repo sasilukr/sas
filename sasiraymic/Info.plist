@@ -55,5 +55,7 @@
 	<string>Used to take pictures of your beautiful pots!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Used to upload pictures</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Used to save pictures</string>
 </dict>
 </plist>

@@ -64,7 +64,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(PotsCollectionViewController(), animated: true)
+        let vc = PotsCollectionViewController()
+        vc.title = self.glazeList[indexPath.item]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
